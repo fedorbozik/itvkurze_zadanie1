@@ -1,3 +1,110 @@
-h1 {
-    font-size: 10em;
+/* GENERAL */
+body {
+	color: #c4cbcf;
+	background-color: #00afc4;
+	font-family: 'Source Sans Pro', sans-serif;
+	-webkit-font-smoothing: antialiased;
 }
+
+.container:before,
+.group:before,
+.menu:before,
+.container:after,
+.group:after,
+.menu:after {
+	content: " ";
+	display: table;
+}
+
+.container:after,
+.group:after,
+.menu:after {
+	clear: both;
+}
+
+.container,
+.group,
+.menu {
+	*zoom:1;
+}
+
+a {
+	text-decoration: none;
+}
+
+strong {
+	font-weight: 900;
+}
+
+.container {
+    width: 100%;
+	/*max-width: 1170px;*/
+	margin: 0 auto;
+}
+
+.menu {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+	float: left;
+}
+
+
+/* NAVIGATION */
+.nav-bar {
+	background: #121b21;
+	display: flex;
+  	align-items: center;
+}
+
+.logo {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+	float: left;
+}
+
+.logo a {
+	display: block;
+	background: url('../img/tilde-logo.png') 0 0 no-repeat;
+	width: 29px;
+	height: 32px;
+	margin-top: 22px;
+	margin-left: 0.8em;
+}
+
+nav {
+	display: flex;
+    align-items: center;
+}
+
+.navigation {
+	float: left;
+	margin: 0 auto;
+	height: 84px;
+}
+
+.navigation a {
+	color: #c4cbcf;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+
+.navigation li {
+	float: left;
+	padding-top: 1.7em;
+	padding-right: 5em;
+}
+
+.navigation li:first-child {
+	padding-left: 3em;
+}
+
+.navigation li:last-child {
+	padding-right: 0;
+}
+
