@@ -7,8 +7,8 @@
 }
 
 document.addEventListener("load", myFunction);
-*/
+
 jQuery("li").hide()
-/*
+
 document.getElementById("demo").innerHTML = "Hello JavaScript";
 */
