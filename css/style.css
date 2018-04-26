@@ -2,6 +2,7 @@
 html, html a {
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    z-index: 10;
 }
 
 body {
@@ -97,6 +98,16 @@ i {
 }
 
 
+/* INTRO IMAGE*/
+.intro-image {
+    margin: -10px;
+    z-index: 1;
+}
+
+.blur {
+	-webkit-filter: blur(3px);
+	filter: blur(0px);
+}
 
 
 /*MEDIA QUERIES - NAV BAR*/
