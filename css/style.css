@@ -179,11 +179,10 @@ i {
 @media screen and (max-width: 600px) {
     .navigation li:first-child {
         display: block;
-        width: 50%;
-        margin-left: -3vw;
-        padding-left: 0px;
-        padding-top: 0em;
-        padding-right: 50em;
+        width: 100%;
+        margin-left: -30vw;
+        padding-left: 0;
+        padding-top: 0;
         float: left;
     }
     .navigation li {
