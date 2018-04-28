@@ -5,29 +5,12 @@
 html, html a {
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    /*background-color: antiquewhite;*/
 }
 
 body {
-	/*color: #c4cbcf;
-	background-color: cornflowerblue;*/
 	font-family: 'Roboto', sans-serif;
     font-weight: 500;
-}
-
-.container:before,
-.group:before,
-.menu:before,
-.container:after,
-.group:after,
-.menu:after {
-	content: " ";
-	display: table;
-}
-
-.container:after,
-.group:after,
-.menu:after {
-	clear: both;
 }
 
 a {
@@ -51,6 +34,7 @@ i {
 
 /* NAVIGATION */
 .nav-bar {
+    width: 100%;
 	background: #121b21;
 	display: flex;
   	align-items: center;
@@ -68,12 +52,9 @@ i {
 
 .navigation {
 	margin: 0 auto;
-	height: 50px;
+	height: 70px;
     list-style: none;
 	padding-left: 0;
-}
-.menu {
-    display: none;
 }
 
 .navigation a {
@@ -96,6 +77,11 @@ i {
     padding-right: 5em;
     float: left;
 }
+
+.menu {
+    display: none;
+}
+
 
 /* HEADER INTRO TEXT*/
 .intro {
@@ -142,7 +128,6 @@ i {
 
 .skills {
     width: 60%;
-
 }
 
 
@@ -176,30 +161,120 @@ i {
 	   padding-right: 3em;
     }
 }
+
+/* RESOLUTION WHEN HAMBURGER MENU IS SHOWN*/
 @media screen and (max-width: 600px) {
-    .navigation li:first-child {
+    .nav-initials {
+        position: relative;
         display: block;
-        width: 100%;
-        margin-left: -30vw;
+        width: 20%;
         padding-left: 0;
         padding-top: 0;
         float: left;
     }
-    .navigation li {
+    .nav-item {
         display: none;
+    }
+    .menu {
+        display: block;
         width: 100%;
-	   float: left;
-	   padding-top: 1em;
-	   padding-right: 0.3em;
+        float: right;
+        margin: -65px 0 0 0;
+        overflow: hidden;
     }
-    .navigation li:nth-child(2) {
-	   float: none;
-	   padding-top: 1em;
-	   padding-right: 3em;
+
+    .slide {
+        display: block;
+        list-style: none;
+        text-decoration: none;
+        clear: both;
+        width: 100%;
+        height: 0px;
+        text-align: center;
+        transition: height 1s ease;
+        background-color: #d9d9d9;
+        overflow: hidden;
     }
-    .navigation a {
-        font-size: 16px;
+    .slide li, .slide a {
+        color: white;
+        height: em;
+        padding: 10px 0 10px 0;
+        display: block;
+	   text-decoration: none;
+	   text-align: center;
+	   font-size: 18px;
+        filter: drop-shadow(0px 0px 10px gray);
     }
+
+    /* --------- HAMBURGER MENU ----------- */
+    /* hiding the checkbox */
+    #menu {
+        visibility: hidden;
+    }
+
+    /* hamburger */
+    label {
+        width: 50px;
+        height: 5px;
+        border-radius: 5px;
+        background: #fff;
+        cursor: pointer;
+        -webkit-transition: 0.6s;
+        transition: 0.6s;
+        position: absolute;
+        top: 2.3%;
+        left: 87%;
+        margin-left: -30px;
+        margin-top: 10px;
+    }
+    label:before {
+        content: "";
+        width: 50px;
+        height: 5px;
+        background: #fff;
+        position: absolute;
+        transform: translateY(-30px);
+        -webkit-transform: translateY(-20px);
+        border-radius: 5px;
+        -webkit-transition: 0.6s;
+        transition: 0.6s;
+    }
+    label:after {
+        content: "";
+        width: 50px;
+        height: 5px;
+        background: #fff;
+        position: absolute;
+        transform: translateY(30px);
+        -webkit-transform: translateY(20px);
+        border-radius: 5px;
+        transition: 0.6s;
+        -webkit-transition: 0.6s;
+    }
+    /* animation when checked */
+    #menu:checked + label {
+        width: 0px;
+    }
+    #menu:checked +label + .slide {
+        display: block;
+        visibility: visible;
+        height: auto;
+        margin: 4em 0 0 0;
+        padding: 0;
+    }
+    #menu:checked + label + .slide li {
+        width: 100%;
+    }
+    #menu:checked + label:before {
+        transform: rotate(45deg) translate(0px);
+        -webkit-transform: rotate(45deg) translate(0px);
+    }
+    #menu:checked + label:after {
+        transform: rotate(-45deg) translate(0px);
+        -webkit-transform: rotate(-45deg) translate(0px);
+    }
+
+
 }
 
 
@@ -244,13 +319,14 @@ i {
         font-size: 4em;
         margin: -9em 0 0 0;
     }
-        .intro-about {
+    .intro-about {
         max-width: 80%;
         font-size: 1.7em;
         margin: -7em auto 2em auto;
     }
 }
 @media screen and (max-width: 640px) {
+
     .intro-text {
         font-size: 3em;
         margin: -10em 0 0 0;
