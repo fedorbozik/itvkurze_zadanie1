@@ -114,7 +114,7 @@ i {
     color: white;
     filter: drop-shadow(0px 0px 12px black);
     font-size: 10em;
-    margin: -10em 0 0 0;
+    margin: -10em auto 0 auto;
 }
 
 /*.intro-text:before {
@@ -125,6 +125,24 @@ i {
   background: -webkit-radial-gradient(50% 50%, ellipse closest-side, black, transparent);
   z-index: -1;
 }*/
+
+.intro-about {
+    max-width: 80%;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    letter-spacing: -0.06em;
+    color: white;
+    filter: drop-shadow(0px 0px 10px black);
+    font-size: 3em;
+    margin: -10em auto 5em auto;
+}
+
+.skills {
+
+}
+
+
 
 /*MEDIA QUERIES - NAV BAR*/
 
@@ -158,7 +176,8 @@ i {
 @media screen and (max-width: 600px) {
     .navigation li:first-child {
         display: block;
-        margin-left: -230px;
+        width: 50%;
+        margin-left: -3vw;
         padding-left: 0px;
         padding-top: 0em;
         padding-right: 50em;
@@ -178,12 +197,6 @@ i {
     }
     .navigation a {
         font-size: 16px;
-    }
-    .menu {
-        display: block;
-        float: right;
-	   padding-top: 1.2em;
-	   padding-right: 0.3em;
     }
 }
 
