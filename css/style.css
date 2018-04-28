@@ -155,6 +155,10 @@ i {
 	   padding-top: 1em;
 	   padding-right: 0.3em;
     }
+    .navigation li,
+    .navigation a {
+        font-size: 18px;
+    }
     .navigation li:nth-child(2) {
 	   float: right;
 	   padding-top: 1em;
