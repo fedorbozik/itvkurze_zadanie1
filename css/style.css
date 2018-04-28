@@ -138,6 +138,8 @@ i {
     margin: -10em auto 5em auto;
 }
 
+/* SKILLS SECTION */
+
 .skills {
     width: 60%;
 
@@ -208,25 +210,45 @@ i {
 @media screen and (max-width: 1600px) {
     .intro-text {
         font-size: 9em;
-        margin: -6em 0 0 0;
+        margin: -8em 0 0 0;
+    }
+    .intro-about {
+        max-width: 80%;
+        font-size: 2.5em;
+        margin: -10em auto 5em auto;
     }
 }
 @media screen and (max-width: 1300px) {
     .intro-text {
         font-size: 7em;
-        margin: -7em 0 0 0;
+        margin: -8em 0 0 0;
+    }
+    .intro-about {
+        max-width: 80%;
+        font-size: 2.35em;
+        margin: -8em auto 3em auto;
     }
 }
 @media screen and (max-width: 1000px) {
     .intro-text {
         font-size: 5em;
-        margin: -7em 0 0 0;
+        margin: -8.5em 0 0 0;
+    }
+    .intro-about {
+        max-width: 80%;
+        font-size: 1.9em;
+        margin: -8em auto 3em auto;
     }
 }
 @media screen and (max-width: 768px) {
     .intro-text {
         font-size: 4em;
-        margin: -8em 0 0 0;
+        margin: -9em 0 0 0;
+    }
+        .intro-about {
+        max-width: 80%;
+        font-size: 1.7em;
+        margin: -7em auto 2em auto;
     }
 }
 @media screen and (max-width: 640px) {
@@ -234,22 +256,42 @@ i {
         font-size: 3em;
         margin: -10em 0 0 0;
     }
+    .intro-about {
+        max-width: 80%;
+        font-size: 1.4em;
+        margin: -8em auto 2em auto;
+    }
 }
 @media screen and (max-width: 585px) {
     .intro-text {
         font-size: 2.5em;
-        margin: -9em 0 0 0;
+        margin: -11em 0 0 0;
+    }
+    .intro-about {
+        max-width: 80%;
+        font-size: 1.3em;
+        margin: -8em auto 2em auto;
     }
 }
 @media screen and (max-width: 430px) {
     .intro-text {
         font-size: 2em;
-        margin: -9.5em 0 0 0;
+        margin: -11em 0 0 0;
+    }
+    .intro-about {
+        max-width: 80%;
+        font-size: 1.02em;
+        margin: -8em auto 2em auto;
     }
 }
 @media screen and (max-width: 360px) {
     .intro-text {
         font-size: 2em;
-        margin: -8em 0 0 0;
+        margin: -10em 0 0 0;
+    }
+    .intro-about {
+        max-width: 80%;
+        font-size: 1.01em;
+        margin: -7.4em auto 0.5em auto;
     }
 }
