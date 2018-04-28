@@ -287,11 +287,11 @@ i {
 @media screen and (max-width: 360px) {
     .intro-text {
         font-size: 2em;
-        margin: -10em 0 0 0;
+        margin: -9em 0 0 0;
     }
     .intro-about {
         max-width: 80%;
-        font-size: 1.01em;
+        font-size: 1em;
         margin: -7.4em auto 0.5em auto;
     }
 }
