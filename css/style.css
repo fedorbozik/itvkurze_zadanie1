@@ -20,8 +20,8 @@ strong, h1 {
 	font-weight: 900;
 }
 
-.container {
-    width: 80%;
+.nav-container {
+    width: 100%;
 	margin: 0 auto;
 }
 
@@ -31,6 +31,8 @@ i {
 
 /* NAVIGATION */
 .nav-bar {
+    width: 100%;
+	margin: 0 auto;
     width: 100%;
 	background: #121b21;
 	display: flex;
@@ -48,6 +50,7 @@ i {
 }
 
 .navigation {
+    width: 100%;
 	margin: 0 auto;
 	height: 70px;
     list-style: none;
@@ -133,7 +136,8 @@ i {
 /* SKILLS SECTION */
 
 .skills {
-    width: 90%;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .timeline-item {
@@ -440,6 +444,12 @@ i {
         font-size: 1.25em;
         margin: -7em auto 1em auto;
     }
+    .skills div div h1 {
+        font-size: 20px;
+    }
+    .skills {
+        width: 95%;
+    }
 }
 @media screen and (max-width: 375px) {
     .intro-text {
@@ -454,7 +464,7 @@ i {
     .timeline-item:first-child {
         font-size: 13px;
     }
-    .skills div div h1 {
-        font-size: 22px;
+    .skills {
+        width: 95%;
     }
 }
