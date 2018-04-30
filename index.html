@@ -15,7 +15,7 @@
 	<![endif]-->
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="/js/myScript.js"></script>
+    <script src="/js/smooth-scroll.min.js"></script>
 </head>
 
 <body id="demo">
@@ -25,10 +25,10 @@
 				<nav>
 					<ul class="navigation">
                         <li class="nav-initials"><a href="#"><strong class="initials">FB</strong></a></li>
-						<li class="nav-item"><a href="#"><i class="fas fa-paper-plane"></i><strong>Contact</strong></a></li>
-						<li class="nav-item"><a href="#"><i class="fas fa-bug"></i><strong>Experience</strong></a></li>
-						<li class="nav-item"><a href="#"><i class="fas fa-code"></i><strong>Skills</strong></a></li>
-						<li class="nav-item"><a href="#"><i class="fas fa-home"></i><strong>Home</strong></a></li>
+						<li class="nav-item"><a data-easing="easeInOutQuad" href="#Contact"><i class="fas fa-paper-plane"></i><strong>Contact</strong></a></li>
+						<li class="nav-item"><a data-easing="easeInOutQuad" href="#three"><i class="fas fa-bug"></i><strong>Experience</strong></a></li>
+						<li class="nav-item"><a data-easing="easeInOutQuad" href="#two"><i class="fas fa-code"></i><strong>Skills</strong></a></li>
+						<li class="nav-item"><a data-easing="easeInOutQuad" href="#one"><i class="fas fa-home"></i><strong>Home</strong></a></li>
 					</ul>
 
                     <div class="menu">
@@ -36,10 +36,10 @@
                         <label for="menu"></label>
 
                         <ul class="slide">
-                            <li><a href="#"><i class="fas fa-home"></i><strong>Home</strong></a></li>
-                            <li><a href="#"><i class="fas fa-code"></i><strong>Skills</strong></a></li>
-                            <li><a href="#"><i class="fas fa-bug"></i><strong>Experience</strong></a></li>
-                            <li><a href="#"><i class="fas fa-paper-plane"></i><strong>Contact</strong></a></li>
+                            <li><a data-easing="easeInOutQuad" href="#home"><i class="fas fa-home"></i><strong>Home</strong></a></li>
+                            <li><a data-easing="easeInOutQuad" href="#skills"><i class="fas fa-code"></i><strong>Skills</strong></a></li>
+                            <li><a data-easing="easeInOutQuad" href="#experience"><i class="fas fa-bug"></i><strong>Experience</strong></a></li>
+                            <li><a data-easing="easeInOutQuad" href="#contact"><i class="fas fa-paper-plane"></i><strong>Contact</strong></a></li>
                         </ul>
                     </div>
 				</nav>
@@ -49,7 +49,7 @@
 
 
 
-	<main>
+	<main id="home">
         <picture>
             <source media="(max-width: 640px)" srcset="img/macbook-pro-desk-640x384.jpeg">
             <source media="(max-width: 1280px)" srcset="img/macbook-pro-desk-1280x768.jpeg">
@@ -64,13 +64,47 @@
             <h2 class="intro-about">I'm an aspiring young developer, programmer and overall an IT guy, who wants to make a good career in this business and learn as much as possible about everything that web, coding, and other stuff entails</h2>
 
         <section class="container skills">
-            <p>Nejaky text</p>
+            <div class="container">
+                <div id="skills" class="timeline-item" date-is='July to October 2017'>
+                    <h1>Summer Internship at AT&amp;T as a PERL programming engineer</h1>
+                    <p>Recording existing programs between shell script or PHP into PERL</p>
+                    <ul>
+                        <li>
+                            <p>Enhancement of existing programs written in PERL</p>
+                        </li>
+                        <li>
+                            <p>Troubleshooting, debugging and testing code</p>
+                        </li>
+                        <li>
+                            <p>Documenting code changes and requirements for deployment of programs to the production environment</p>
+                        </li>
+                        <li>
+                            <p>Designing, developing and recommending ways to improve code</p>
+                        </li>
+                        <li>
+                            <p>Obtained experience in RedHat Linux, PERL, shell scripting and PHP as well as experience with UNIX systems</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item" date-is='2016'>
+                    <h1>Front desk receptionist at Hotel Senec</h1>
+                    <p>
+                       Helping customers in person and on the phone under the supervision of the reception manager
+                    </p>
+                    <ul>
+                        <li>Two employees always present at the reception led to more experience in teamwork and understanding</li>
+                    </ul>
+                </div>
+            </div>
         </section>
-	</main>
-
-
+    </main>
 
 	<footer>
+        <script>/*smooth scroll initialization*/
+	       var scroll = new SmoothScroll('a[href*="#"]');
+        </script>
+
 
     </footer>
 
