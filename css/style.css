@@ -254,7 +254,7 @@ i {
         display: block;
         width: 100%;
         float: right;
-        margin: -65px 0 0 0;
+        margin: -65px auto 0 auto;
         overflow: hidden;
         transition: height 1s ease;
     }
@@ -409,7 +409,6 @@ i {
     }
 }
 @media screen and (max-width: 640px) {
-
     .intro-text {
         font-size: 3em;
         margin: -10em 0 0 0;
