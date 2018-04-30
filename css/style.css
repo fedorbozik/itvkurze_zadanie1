@@ -134,7 +134,7 @@ i {
 /* SKILLS SECTION */
 
 .skills {
-    width: 90%;
+    width: 80%;
 }
 
 .timeline-item {
@@ -172,6 +172,17 @@ i {
 .timeline-item:last-child {
   -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
      border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+}
+/* first child visual changes to appear as a title */
+.timeline-item:first-child::after {
+    top: 50%;
+}
+.timeline-item:first-child {
+    font-size: 40px;
+    padding: 20px;
+    line-height: 10px;
+    text-align: center;
+    border-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
 }
 /*.code-background {
     background-image: url("../img/code-background.png");
@@ -213,6 +224,9 @@ i {
 	   float: right;
 	   padding-top: 1em;
 	   padding-right: 3em;
+    }
+    .timeline-item:first-child {
+        font-size: 25px;
     }
 }
 
@@ -412,6 +426,9 @@ i {
         max-width: 80%;
         font-size: 1.3em;
         margin: -8em auto 4em auto;
+    }
+    .timeline-item:first-child {
+        font-size: 20px;
     }
 }
 @media screen and (max-width: 430px) {
