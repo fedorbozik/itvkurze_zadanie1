@@ -360,16 +360,16 @@ i {
 }
 @media screen and (max-width: 430px) {
     .intro-text {
-        font-size: 2em;
-        margin: -11em 0 0 0;
+        font-size: 3em;
+        margin: -7.8em 0 0 0;
     }
     .intro-about {
-        max-width: 80%;
-        font-size: 1.02em;
-        margin: -8em auto 2em auto;
+        max-width: 90%;
+        font-size: 1.25em;
+        margin: -7em auto 1em auto;
     }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
     .intro-text {
         font-size: 2em;
         margin: -9em 0 0 0;
