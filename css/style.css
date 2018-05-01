@@ -142,8 +142,7 @@ i {
 }
 
 /* SKILLS SECTION */
-
-.skills {
+.skills-section {
     width: 70%;
     margin: 0 auto;
 }
@@ -204,6 +203,11 @@ i {
     background-size: auto 100%;
 }*/
 
+/* EXPERIENCE SECTION */
+.experience-section {
+    width: 70%;
+    margin: 0 auto;
+}
 
 /*MEDIA QUERIES - NAV BAR*/
 
