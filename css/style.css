@@ -209,6 +209,25 @@ i {
     margin: 0 auto;
 }
 
+/* FOOTER */
+.footer {
+    width: 100%;
+    height: auto;
+    font-size: 22px;
+    background-color: black;
+    color: white;
+    margin: 0;
+    letter-spacing: 1em;
+}
+.footer p {
+    text-align: center;
+    padding: 20px;
+}
+.copyright-icon {
+    /*font-size: 32px;*/
+}
+
+
 /*MEDIA QUERIES - NAV BAR*/
 
 @media screen and (max-width: 1200px) {
@@ -368,10 +387,7 @@ i {
         transform: rotate(-45deg) translate(0px);
         -webkit-transform: rotate(-45deg) translate(0px);
     }
-
-
 }
-
 
 
 /*MEDIA QUERIES - NAV BAR*/
