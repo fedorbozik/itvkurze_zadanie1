@@ -498,10 +498,7 @@ i {
         margin: -8em auto 4em auto;
     }
     .codepen-embed-div {
-        width: 795px;
-        position: relative;
-        margin: -500px auto 100px -100px;
-        transform: scale(0.5, 0.5);
+        display: none;
     }
 }
 @media screen and (max-width: 585px) {
@@ -536,10 +533,7 @@ i {
         width: 95%;
     }
     .codepen-embed-div {
-        width: 100%;
-        position: relative;
-        margin: -150px 0 -100px 0;
-        transform: scale(1, 0.6);
+        display: none;
     }
 }
 @media screen and (max-width: 375px) {
@@ -559,10 +553,7 @@ i {
     .experience-section {
         width: 95%;
     }
-        .codepen-embed-div {
-        width: 100%;
-        position: relative;
-        margin: -150px 0 -100px 0;
-        transform: scale(1, 0.5);
+    .codepen-embed-div {
+        display: none;
     }
 }
