@@ -208,6 +208,13 @@ i {
     margin: 0 auto;
 }
 
+.codepen-embed-div {
+    width: 795px;
+    position: relative;
+    margin: -1150px auto 600px auto;
+    transform: scale(0.9, 0.6) rotate3d(3, 2.5, -1.2, 20deg) translateZ(-100px);
+}
+
 /* FOOTER */
 .footer {
     width: 100%;
@@ -241,6 +248,12 @@ i {
 	   padding-top: 1em;
 	   padding-right: 1.5em;
     }
+    .codepen-embed-div {
+        width: 795px;
+        position: relative;
+        margin: -650px auto 100px auto;
+        transform: scale(0.7, 0.7);
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -260,6 +273,12 @@ i {
     }
     .timeline-item:first-child {
         font-size: 25px;
+    }
+    .codepen-embed-div {
+        width: 795px;
+        position: relative;
+        margin: -550px auto 0px auto;
+        transform: scale(0.6, 0.6);
     }
 }
 
@@ -390,7 +409,22 @@ i {
 
 
 /*MEDIA QUERIES - NAV BAR*/
-
+@media screen and (min-width: 2200px) {
+    .codepen-embed-div {
+        width: 795px;
+        position: relative;
+        margin: -1000px auto 500px auto;
+        transform: scale(1, 1)
+    }
+}
+@media screen and (max-width: 1720px) {
+    .codepen-embed-div {
+        width: 795px;
+        position: relative;
+        margin: -1000px auto 500px auto;
+        transform: scale(1, 1)
+    }
+}
 @media screen and (max-width: 1600px) {
     .intro-text {
         font-size: 9em;
@@ -400,6 +434,12 @@ i {
         max-width: 80%;
         font-size: 2.5em;
         margin: -10em auto 5em auto;
+    }
+    .codepen-embed-div {
+        width: 795px;
+        position: relative;
+        margin: -800px auto 250px auto;
+        transform: scale(1, 1)
     }
 }
 @media screen and (max-width: 1300px) {
@@ -412,6 +452,12 @@ i {
         font-size: 2.35em;
         margin: -8em auto 3em auto;
     }
+    .codepen-embed-div {
+        width: 795px;
+        position: relative;
+        margin: -600px auto 110px auto;
+        transform: scale(1, 1)
+    }
 }
 @media screen and (max-width: 1000px) {
     .intro-text {
@@ -422,6 +468,12 @@ i {
         max-width: 80%;
         font-size: 1.9em;
         margin: -8em auto 3em auto;
+    }
+    .codepen-embed-div {
+        width: 795px;
+        position: relative;
+        margin: -550px auto 50px auto;
+        transform: scale(0.8, 0.8)
     }
 }
 @media screen and (max-width: 768px) {
@@ -444,6 +496,12 @@ i {
         max-width: 80%;
         font-size: 1.4em;
         margin: -8em auto 4em auto;
+    }
+    .codepen-embed-div {
+        width: 795px;
+        position: relative;
+        margin: -500px auto 100px -100px;
+        transform: scale(0.5, 0.5);
     }
 }
 @media screen and (max-width: 585px) {
@@ -477,6 +535,12 @@ i {
     .experience-section {
         width: 95%;
     }
+    .codepen-embed-div {
+        width: 100%;
+        position: relative;
+        margin: -150px 0 -100px 0;
+        transform: scale(1, 0.6);
+    }
 }
 @media screen and (max-width: 375px) {
     .intro-text {
@@ -494,5 +558,11 @@ i {
     .skills-section,
     .experience-section {
         width: 95%;
+    }
+        .codepen-embed-div {
+        width: 100%;
+        position: relative;
+        margin: -150px 0 -100px 0;
+        transform: scale(1, 0.5);
     }
 }
