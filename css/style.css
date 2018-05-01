@@ -457,7 +457,7 @@ i {
         margin: -8em auto 4em auto;
     }
     .timeline-item:first-child {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 @media screen and (max-width: 430px) {
@@ -470,10 +470,11 @@ i {
         font-size: 1.25em;
         margin: -7em auto 1em auto;
     }
-    .skills div div h1 {
-        font-size: 20px;
+    .timeline-item h1 {
+        font-size: 22px;
     }
-    .skills {
+    .skills-section,
+    .experience-section {
         width: 95%;
     }
 }
@@ -490,7 +491,8 @@ i {
     .timeline-item:first-child {
         font-size: 13px;
     }
-    .skills {
+    .skills-section,
+    .experience-section {
         width: 95%;
     }
 }
