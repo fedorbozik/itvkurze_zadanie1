@@ -405,6 +405,9 @@ i {
         transform: rotate(-45deg) translate(0px);
         -webkit-transform: rotate(-45deg) translate(0px);
     }
+    .codepen-embed-div {
+        display: none;
+    }
 }
 
 
@@ -497,9 +500,6 @@ i {
         font-size: 1.4em;
         margin: -8em auto 4em auto;
     }
-    .codepen-embed-div {
-        display: none;
-    }
 }
 @media screen and (max-width: 585px) {
     .intro-text {
@@ -513,6 +513,9 @@ i {
     }
     .timeline-item:first-child {
         font-size: 16px;
+    }
+    .codepen-embed-div {
+        display: none;
     }
 }
 @media screen and (max-width: 430px) {
