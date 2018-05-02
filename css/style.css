@@ -220,6 +220,7 @@ i {
     position: relative;
     max-width: 100%;
     height: auto;
+    padding-bottom: 10rem;
 }
 video {
     position: relative;
@@ -230,7 +231,7 @@ video {
     transition: 1s opacity;
 }
 .stopfade {
-   opacity: .5;
+   opacity: .3;
 }
 
 @media screen and (max-device-width: 600px) {
