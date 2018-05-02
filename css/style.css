@@ -215,6 +215,36 @@ i {
     transform: scale(0.9, 0.6) rotate3d(3, 2.5, -1.2, 20deg) translateZ(-100px);
 }
 
+/* VIDEO ELEMENT SECTION */
+.bg-cideo-section {
+    position: fixed;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+video {
+    position: relative;
+    min-width: 90%;
+    min-height: 100%;
+    background: url('../img/bg-video-thumbnail-poster.png') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+.stopfade {
+   opacity: .5;
+}
+
+@media screen and (max-device-width: 800px) {
+    .bg-video-section {
+        background: url('../img/bg-video-thumbnail-poster.png') #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+}
+
+
 /* FOOTER */
 .footer {
     width: 100%;
