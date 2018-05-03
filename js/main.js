@@ -36,4 +36,21 @@ pauseButton.addEventListener("click", function() {
     vid.pause();
     //vid.classList.toggle("stopfade");
   }
-})
+});
+
+// CONTACT FORM STUFF
+function processSubmitEmailRequest(){
+    var address = "fedor.bozik@itvkurze.sk";
+    var subject = document.getElementById("subject").value;
+    var body = document.getElementById("message").value;
+
+    var url = 'mailto:' + address + '?subject=' + subject + '&body=' + body;
+    window.open(url, "_blank")
+};
+
+
+
+
+
+
+

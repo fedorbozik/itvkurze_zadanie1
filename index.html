@@ -171,16 +171,16 @@
             </video>
         </div>
 
-        <picture>
-            <source media="(max-width: 640px)" srcset="img/macbook-pro-iphone-cup-desk-640x426.jpg">
-            <source media="(max-width: 1280px)" srcset="img/macbook-pro-iphone-cup-desk-1280x853.jpg">
-            <source media="(max-width: 1920px)" srcset="img/macbook-pro-iphone-cup-desk-1920x1080.jpg">
-            <source media="(min-width: 3840px)" srcset="img/macbook-pro-iphone-cup-desk-5760x3840.jpg">
-            <img id="contact" src="img/macbook-pro-iphone-cup-desk-5760x3840.jpg" alt="intro-image" style="max-width:100%; height:auto;">
-        </picture>
-        <section class="contact-form">
-            <input>
+        <section id="contact" class="contact-form">
+            <h1>CONTACT FORM</h1>
+
+            <form id="form" class="topBefore">
+                <input name="subject" id="subject" type="text" placeholder="Subject">
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+                <input id="submit" onclick="processSubmitEmailRequest();" type="submit" value="SEND MESSAGE">
+            </form>
         </section>
+
     </main>
 
     <div class="social">
@@ -191,12 +191,13 @@
         <a target="_blank" href="https://codepen.io/bozik/" class="social__button codepen"><i class="fab fa-codepen"></i></a>
     </div>
 
-	<footer class="footer">
-        <p><strong class="copyright-icon">&copy;</strong> Fedor Božík 2018</p>
+	<footer>
+        <div class="footer-content">
+            <h3> &copy; Fedor Božík | 2018</h3>
+        </div>
     </footer>
 
-    <!--
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
     <script src="./js/main.js"></script>

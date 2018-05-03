@@ -239,40 +239,201 @@ video {
    opacity: 0.8;
 }
 
-@media screen and (max-device-width: 600px) {
-    video {
-        max-width: 100%;
-        min-width: none;
-    }
-    .stopfade {
-        opacity: 1;
-    }
-    /*.bg-video-section {
-        background: url('../img/bg-video-thumbnail-poster.png') #000 no-repeat center center fixed;
-    }
-    #bgvid {
-        display: none;
-    }*/
+/* CONTACT FORM */
+
+/* FORM HOVER STYLES */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
 }
 
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+/* END  FORM HOVER STYLES */
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.contact-form h1 {
+  position: relative;
+  margin: 100px 0 25px 0;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+
+  background: transparent;
+  outline: none;
+  color: black;
+
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: black;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+
+  background: transparent;
+  outline: none;
+
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+  font-size: 0.875em;
+
+  border: solid 1px #b3aca7;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: black;
+}
+
+#submit {
+  width: 502px;
+
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+
+  font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+  font-size: 1em;
+  color: black;
+
+  outline:none;
+  cursor: pointer;
+
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: black;
+}
 
 /* FOOTER */
-.footer {
+.footer-content {
     width: 100%;
-    height: auto;
-    font-size: 22px;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem 1rem 0;
+    margin: 0;
+    font-size: 16px;
     background-color: black;
     color: white;
-    margin: 0;
-    letter-spacing: 1em;
+    letter-spacing: 1rem;
 }
-.footer p {
+.footer h3 {
     text-align: center;
-    padding: 20px;
 }
 .copyright-icon {
     /*font-size: 32px;*/
 }
+/* BECAUSE OF THE FIXED SOCIAL ICONS */
 body {
     overflow-x: hidden;
 }
@@ -300,6 +461,7 @@ body {
     cursor: pointer;
     margin: 5px;
     text-align: center;
+    filter: drop-shadow(2px 2px 4px gray);
 }
 .social__button i {
     padding: 0;
@@ -546,6 +708,19 @@ body {
     .codepen-embed-div {
         display: none;
     }
+    video {
+        max-width: 100%;
+        min-width: none;
+    }
+    .stopfade {
+        opacity: 1;
+    }
+    /*.bg-video-section {
+        background: url('../img/bg-video-thumbnail-poster.png') #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }*/
 }
 
 
@@ -762,6 +937,36 @@ body {
         left: 91%;
         top: 60%;
     }
+    .contact-form h1 {
+      margin: 50px 0 25px 0;
+      font-size: 1.8em;
+    }
+    #form {
+      width: 70%;
+      margin: 10% auto 10% 10%;
+    }
+    input {
+      font-size: 0.875em;
+      width: 100%;
+      height: 50px;
+      padding: 0px 15px 0px 15px;
+    }
+    textarea {
+      width: 100%;
+      max-width: 100%;
+      height: 110px;
+      max-height: 110px;
+      padding: 15px;
+    }
+    #submit {
+      width: 111%;
+      padding: 0;
+      margin: -5px 0px 0px 0px;
+    }
+    .footer-content {
+        font-size: 10px;
+        letter-spacing: 10px;
+    }
 }
 @media screen and (max-width: 375px) {
     .intro-text {
@@ -786,5 +991,14 @@ body {
     .social {
         left: 90%;
         top: 50%;
+    }
+    #submit {
+      width: 114.5%;
+      padding: 0;
+      margin: -5px 0px 0px 0px;
+    }
+    .footer-content {
+        font-size: 10px;
+        letter-spacing: 5px;
     }
 }
