@@ -9,10 +9,10 @@ var scroll = new SmoothScroll('a[href*="#"]');
 var vid = document.getElementById("bgvid");
 var pauseButton = document.querySelector("#bgvid");
 
-/*if (window.matchMedia('(prefers-reduced-motion)').matches) {
+if (window.matchMedia('(prefers-reduced-motion)').matches) {
     vid.removeAttribute("autoplay");
     vid.pause();
-}*/
+}
 
 function vidFade() {
   vid.classList.add("stopfade");
