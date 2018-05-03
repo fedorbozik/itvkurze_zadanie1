@@ -148,8 +148,7 @@
         <div class="bg-video-section">
             <video poster="img/bg-video-thumbnail-poster.png" id="bgvid" playsinline autoplay muted loop>
                 <!--
-                - Video needs to be muted, since Chrome 66+ will not autoplay video with sound.
-                WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+                - Video needs to be muted, since Chrome 66+ will not autoplay video with sound.     -->
                 <source src="vid/bg-video-code-full-1920x1080-webm.webm" type="video/webm">
                 <source src="vid/bg-video-code-full-1920x1080-h264.mp4" type="video/mp4">
                 <source src="vid/bg-video-code-full-1920x1080-ogg.ogg" type="video/ogg">
@@ -162,7 +161,7 @@
             <source media="(max-width: 1280px)" srcset="img/macbook-pro-iphone-cup-desk-1280x853.jpg">
             <source media="(max-width: 1920px)" srcset="img/macbook-pro-iphone-cup-desk-1920x1080.jpg">
             <source media="(min-width: 3840px)" srcset="img/macbook-pro-iphone-cup-desk-5760x3840.jpg">
-            <img src="img/macbook-pro-iphone-cup-desk-5760x3840.jpg" alt="intro-image" style="max-width:100%; height:auto;">
+            <img id="contact" src="img/macbook-pro-iphone-cup-desk-5760x3840.jpg" alt="intro-image" style="max-width:100%; height:auto;">
         </picture>
     </main>
 
@@ -178,9 +177,10 @@
         <p><strong class="copyright-icon">&copy;</strong> Fedor Božík 2018</p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./js/smooth-scroll.min.js"></script>
-    <script src="./js/aos.js"></script>
+    <!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

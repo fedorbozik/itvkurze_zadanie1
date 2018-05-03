@@ -9,10 +9,10 @@ var scroll = new SmoothScroll('a[href*="#"]');
 var vid = document.getElementById("bgvid");
 var pauseButton = document.querySelector("#bgvid");
 
-if (window.matchMedia('(prefers-reduced-motion)').matches) {
+/*if (window.matchMedia('(prefers-reduced-motion)').matches) {
     vid.removeAttribute("autoplay");
     vid.pause();
-}
+}*/
 
 function vidFade() {
   vid.classList.add("stopfade");
@@ -30,9 +30,10 @@ vidFade();
 pauseButton.addEventListener("click", function() {
   if (vid.paused) {
     vid.play();
-    vid.classList.toggle("stopfade");
+    // disabled because it causes the fixed social icons to go crazy
+    //vid.classList.toggle("stopfade");
   } else {
     vid.pause();
-    vid.classList.toggle("stopfade");
+    //vid.classList.toggle("stopfade");
   }
 })
