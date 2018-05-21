@@ -216,7 +216,7 @@ i {
     width: 795px;
     position: relative;
     margin: -1150px auto 600px auto;
-    transform: scale(0.9, 0.6) rotate3d(3, 2.5, -1.2, 20deg) translateZ(-100px);
+    /*transform: scale(0.9, 0.6) rotate3d(3, 2.5, -1.2, 20deg) translateZ(-100px);*/
 }
 
 /* VIDEO ELEMENT SECTION */
